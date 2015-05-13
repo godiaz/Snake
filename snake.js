@@ -8,11 +8,11 @@ var score = 0;
 var player = new Rectangle(40,40,10,10);
 var food = new Rectangle(80,80,10,10);
 
-var KEY_ENTER=13;
-var KEY_LEFT=37;
-var KEY_UP=38;
-var KEY_RIGHT=39;
-var KEY_DOWN=40;
+var KEY_ENTER = 13;
+var KEY_LEFT = 37;
+var KEY_UP = 38;
+var KEY_RIGHT = 39;
+var KEY_DOWN = 40;
 
 function random(max){
     return Math.floor(Math.random()*max);
@@ -75,7 +75,7 @@ function act(){
         }
     }
     // Pause/Unpause
-    if(lastPress===KEY_ENTER){
+    if(lastPress === KEY_ENTER){
         pause =!pause;
         lastPress = null;
     }
